@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://maven.apache.org/POM/4.0.0"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>marchosius-dependencies</artifactId>
+		<groupId>io.github.marchosius</groupId>
+		<relativePath>../marchosius-dependencies</relativePath>
+		<version>${revision}</version>
+	</parent>
+
+	<groupId>io.github.marchosius</groupId>
+	<artifactId>marchosius-parent</artifactId>
+	<version>${revision}</version>
+	<packaging>pom</packaging>
+	<description>Marchosius Parent</description>
+	<url>https://github.com/marchosius/marchosius</url>
+
+	<scm>
+		<url>https://github.com/marchosius/marchosius</url>
+		<connection>scm:git:git://github.com/marchosius/marchosius.git</connection>
+		<developerConnection>scm:git:ssh://github.com/marchosius/marchosius.git
+		</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>marchosius</id>
+			<name>Marchosius</name>
+			<email>qian.he.dev@gmail.com</email>
+			<url>https://github.com/marchosius</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<main.basedir>${basedir}/../..</main.basedir>
+		<java.version>17</java.version>
+		<resource.delimiter>@</resource.delimiter>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+</project>
